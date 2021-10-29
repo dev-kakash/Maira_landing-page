@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 3), transparent),
+    url(images/background.png);
+  background-size: cover;
+  background-position: center;
+  padding: 20px 140px;
+}
+
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container nav ul {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  justify-content: end;
+  margin-right: 30px;
+}
+
+.container nav ul li {
+  margin-left: 20px;
+}
+
+.container nav .logo {
+  width: 100px;
+}
+
+.container nav .cart {
+  width: 25px;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 60px;
+}
+
+.content h3 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.content h1 {
+  font-size: 190px;
+  line-height: 160px;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(images/back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: design 10s linear infinite;
+}
+
+@keyframes design {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+
+.content p {
+  font-size: 50px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.content .last {
+  margin-left: 10px;
+}
+.content .last button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  margin-right: 15px;
+}
+
+.content .last_part {
+  display: flex;
+  align-content: center;
+}
